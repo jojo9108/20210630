@@ -83,14 +83,15 @@ public class pilatesApp {
 	}
 
 	public void memberDetail() {
-		int detail = scanInt("상세조회를 하실 ID를 입력하세요.");		
+		int detail = scanInt("상세조회를 하실 ID를 입력하세요.");	
+		scn.nextLine();
 		for (int i = 0; i < members.length; i++) {
-			scn.nextLine();
-			System.out.println("======================================");
-			if (members[i] != null && members[i].getMemberId() == detail)
-			System.out.printf(members[i].getDetail());
-			System.out.println("\n========================================");
-			break;
+			if (members[i] != null && members[i].getMemberId() == detail) {
+				System.out.println("========================================");
+				System.out.printf(members[i].getDetail());
+				System.out.println("\n========================================");
+				break;
+			}
 		}
 	}
 

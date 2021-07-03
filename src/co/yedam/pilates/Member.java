@@ -67,7 +67,7 @@ public class Member {
 				+ this.memberphone + "\n성별: " + this.membergender);
 	}
 	public String getDetail() {
-		return "회원번호: " + this.memberId + " 이름: " + this.membername + "\n생년월일: " + this.memberbirth + " 연락처: "
-				+ this.memberphone + "\n성별: " + this.membergender;
+		return "회원번호: " + memberId + "\t이름: " + membername + "\n생년월일: " + memberbirth + " 연락처: "
+				+ memberphone + "\n성별: " + membergender;
 	}
 }

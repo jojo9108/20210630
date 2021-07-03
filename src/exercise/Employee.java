@@ -19,6 +19,13 @@ public class Employee {
 		
 	}
 	
+	public Employee(int empNum, String name, String email) {
+		super();
+		this.empNum = empNum;
+		this.name = name;
+		this.email = email;
+	}
+	
 	public Employee(int empNum, String name, String email, int pay, String dept) {
 		super();
 		this.empNum = empNum;
@@ -69,7 +76,7 @@ public class Employee {
 	}
 
 	public String showInfo() {
-		String info = "사원번호: " + empNum + " | 이름: " + name + " | 이메일: " + email + " | 급여: " + pay + " | 부서: " + dept;
+		String info = "사원번호: " + empNum + ", 이름: " + name + ", 이메일: " + email + ", 급여: " + pay + " ,부서: " + dept;
 		return info;
 	}
 
