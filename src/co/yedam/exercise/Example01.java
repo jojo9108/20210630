@@ -1,15 +1,15 @@
-package exercise;
+package co.yedam.exercise;
 
 public class Example01 {
 
 	public static void main(String[] args) {
 		Employee emp1 = new Employee(1234, "박주현", "pjh@email.com", 45000000, "개발부");
 		System.out.println(emp1.showInfo());
-		
+
 		Employee emp2 = new Employee(1235, "홍미림", "hmr@email.com");
 		System.out.println(emp2.showInfo());
-		
-		Employee emp3 = new Employee(1236, "홍길동", "hgd@email.com", 50000000, "총문부");
+
+		Employee emp3 = new Employee(1236, "권가영", "ggy@email.com", 50000000, "총무부");
 		System.out.println(emp3.showInfo());
 	}
 

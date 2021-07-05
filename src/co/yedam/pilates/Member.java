@@ -7,6 +7,21 @@ public class Member {
 	private String memberbirth;
 	private Gender membergender;
 
+	public Member() {
+		this.memberId = 100;
+		this.membername = "Hong";
+		this.memberphone = "010";
+	}
+
+	public Member(int memberId, String membername, String memberphone, String memeberbirth, Gender membergender, String memberbirth) {
+		super();
+		this.memberId = memberId;
+		this.membername = membername;
+		this.memberphone = memberphone;
+		this.memberbirth = memberbirth;
+		this.membergender = membergender;
+	}
+
 	public Member(int memberId, String membername, String memberphone, String memberbirth, Gender membergender) {
 		super();
 		this.memberId = memberId;
@@ -63,11 +78,12 @@ public class Member {
 	}
 
 	public void setDetail() {
-		System.out.println("회원번호: " + this.memberId + "\2t이름: " + this.membername + "\n생년월일: " + this.memberbirth + "\2t연락처: "
+		System.out.println("회원번호: " + this.memberId + "이름: " + this.membername + "\n생년월일: " + this.memberbirth + "연락처: "
 				+ this.memberphone + "\n성별: " + this.membergender);
 	}
+
 	public String getDetail() {
-		return "회원번호: " + memberId + "\t이름: " + membername + "\n생년월일: " + memberbirth + " 연락처: "
-				+ memberphone + "\n성별: " + membergender;
+		return "회원번호: " + memberId + "\t이름: " + membername + "\n생년월일: " + memberbirth + "\t연락처: " + memberphone
+				+ "\n성별: " + membergender;
 	}
 }

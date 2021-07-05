@@ -1,6 +1,4 @@
-package exercise;
-
-import co.yedam.pilates.Gender;
+package co.yedam.exercise;
 
 public class Employee {
 	// 필드(사원.)정의
@@ -16,16 +14,16 @@ public class Employee {
 	private String dept;
 
 	public Employee() {
-		
+
 	}
-	
+
 	public Employee(int empNum, String name, String email) {
 		super();
 		this.empNum = empNum;
 		this.name = name;
 		this.email = email;
 	}
-	
+
 	public Employee(int empNum, String name, String email, int pay, String dept) {
 		super();
 		this.empNum = empNum;
@@ -76,7 +74,7 @@ public class Employee {
 	}
 
 	public String showInfo() {
-		String info = "사원번호: " + empNum + ", 이름: " + name + ", 이메일: " + email + ", 급여: " + pay + " ,부서: " + dept;
+		String info = "사원번호: " + empNum + " | 이름: " + name + " | 이메일: " + email + " | 급여: " + pay + "\t | 부서: " + dept;
 		return info;
 	}
 
