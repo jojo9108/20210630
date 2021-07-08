@@ -1,5 +1,7 @@
 package co.friend.view;
 
+import java.util.List;
+
 import co.friend.access.FriendAccess;
 import co.friend.access.FriendList;
 import co.friend.common.ScannerUtil;
@@ -59,7 +61,7 @@ public class FriendCliApp {
 	}
 
 	public void list() {
-		Friend[] friendList = service.selectAll();
+		List<Friend> friendList = service.selectAll();
 		boolean exist = false;
 		for (Friend friend : friendList) {
 			if (friend != null)
