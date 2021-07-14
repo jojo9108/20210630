@@ -76,5 +76,15 @@ public class Student {
 	
 		
 	}
+
+	public int geteScore() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getmScore() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 		
 }
